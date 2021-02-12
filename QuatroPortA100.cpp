@@ -38,9 +38,6 @@ void QuatroPortA100::moveBackward(int m1Power, int m2Power) {
     short m1ResultDir = _invertDir ? FORWARD : BACKWARD;
     short m2ResultDir = _invertDir ? FORWARD : BACKWARD;
 
-    m2ResultPower = 255;
-    m2ResultDir = LOW;
-
     analogWrite(_m1In, m1ResultPower);
     digitalWrite(_m1Dir, m1ResultDir);
     analogWrite(_m2In, m2ResultPower);
